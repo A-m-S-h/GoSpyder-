@@ -114,8 +114,8 @@ gospyder/
 └── full_recon.go      # Orchestrates all modules in sequence
 ```
 ---
-Comparison with Nmap
 Feature	GoSpyder	Nmap
+---
 Ease of Use	Interactive prompts, beginner-friendly	Command-line flags, steeper learning curve
 Multiple Host Input	Native multi-host support in one session	Requires scripting or range notation
 Full Recon	Single command, all modules	Multiple separate commands
@@ -123,26 +123,30 @@ Installation	Single binary, minimal dependencies	Larger install with additional 
 Customization	Targeted use-case focused	Highly scriptable (NSE), expert-oriented
 Output	Structured, color-coded	Detailed but dense
 GoSpyder is not a Nmap replacement — it is a focused, lightweight alternative optimized for ease of use and rapid reconnaissance.
----
+
 Limitations & Known Issues
+---
 OS detection relies solely on TTL values; accuracy may vary with TTL manipulation or proxies
 Service detection uses banner grabbing — services that don't emit banners will show "No Banner received"
 Host discovery uses ICMP ping via system `ping` command; hosts blocking ICMP will appear offline
 Not designed for stealth scanning; IDS/firewalls may detect and block scans
----
+
 Future Work
+---
 [ ] Deep service version detection (beyond banner grabbing)
 [ ] CVE cross-referencing for detected services
 [ ] Stealth scanning modes (slow-rate, fragmented packets)
 [ ] JSON / CSV export of scan results
 [ ] Web-based dashboard for scan visualization
 [ ] Real-time alerts via Slack / email integration
----
+
 Disclaimer
+---
 GoSpyder is intended for authorized security testing and educational purposes only. Scanning networks or hosts without explicit permission is illegal and unethical. The author is not responsible for any misuse of this tool.
 Always obtain proper authorization before scanning any network or system.
----
+
 Author
+---
 Aman Sharma — Cybersecurity Researcher & Penetration Tester
 ![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=flat-square&logo=linkedin)
 ![Blog](https://img.shields.io/badge/Blog-AshSec.blog-FF5722?style=flat-square)
