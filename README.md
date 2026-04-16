@@ -6,7 +6,9 @@
 GoSpyder is a fast, modular network scanning tool that leverages Go's concurrency model (goroutines) to perform rapid host discovery, port scanning, service detection, and OS fingerprinting — all from a single interactive CLI.
 ---
 Features
+---
 Module	Description
+
 🔍 Host Discovery	Ping a subnet (CIDR) or single IP to identify live hosts
 🔌 Port Scanning	Scan port ranges or specific ports via TCP connect
 🛠️ Service Detection	Banner grabbing to identify FTP, HTTP, SSH, SMTP, MySQL and more
