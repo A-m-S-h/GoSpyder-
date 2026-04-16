@@ -10,9 +10,13 @@ Features
 Module	Description
 --- 
 🔍 Host Discovery	Ping a subnet (CIDR) or single IP to identify live hosts
+
 🔌 Port Scanning	Scan port ranges or specific ports via TCP connect
+
 🛠️ Service Detection	Banner grabbing to identify FTP, HTTP, SSH, SMTP, MySQL and more
+
 💻 OS Fingerprinting	TTL-based OS detection (Linux, Windows, Cisco, macOS, etc.)
+
 🗺️ Full Recon	One-shot comprehensive scan combining all modules
 
 Demo
